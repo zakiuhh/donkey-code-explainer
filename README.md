@@ -68,9 +68,12 @@ Output (short version):
 
 ### Claude (web and apps)
 
-1. Download this repo as a ZIP (or zip the `donkey-code-explainer` folder yourself). Make sure `SKILL.md` sits at the top level of the folder inside the ZIP.
-2. Open Claude's settings and find the Skills section.
-3. Upload the ZIP and turn the skill on.
+1. Download the `donkey-code-explainer.skill` file included in this repository.
+2. Go to [claude.ai/customize/skills](https://claude.ai/customize/skills).
+3. Click on **Add**, then select **Upload Skill**.
+4. Choose and upload the `donkey-code-explainer.skill` file.
+
+*Alternative method:* Download this repo as a ZIP (or zip the folder yourself with `SKILL.md` at the root) and upload the ZIP file instead.
 
 ### Claude Code
 
@@ -88,11 +91,12 @@ cp -r donkey-code-explainer ~/.claude/skills/
 ```
 donkey-code-explainer/
 ├── assets/
-│   ├── logo-dark.png    # for dark backgrounds
-│   └── logo-light.png   # for light backgrounds
+│   ├── logo-dark.png            # for dark backgrounds
+│   └── logo-light.png           # for light backgrounds
+├── donkey-code-explainer.skill  # pre-packaged skill file for upload
 ├── LICENSE
 ├── README.md
-└── SKILL.md             # the actual skill
+└── SKILL.md                     # the actual skill definition
 ```
 
 ## Customizing
